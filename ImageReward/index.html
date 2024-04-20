@@ -33,7 +33,7 @@
 <meta property="og:image" content="https://files.mdnice.com/user/49828/be5839a9-77de-41c3-93dc-5bd878f95cbd.png">
 <meta property="og:image" content="https://files.mdnice.com/user/49828/9e109e5c-84e6-42ed-ae61-831ca3ef8ff4.png">
 <meta property="article:published_time" content="2024-04-20T02:23:03.000Z">
-<meta property="article:modified_time" content="2024-04-20T02:52:11.020Z">
+<meta property="article:modified_time" content="2024-04-20T03:02:30.006Z">
 <meta property="article:author" content="lzw">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://files.mdnice.com/user/49828/67f15a60-e369-4cdf-bbfd-2c8a1f123cd6.png">
@@ -180,7 +180,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            ~5.42K
+                            ~5.41K
                         
                         字
                     </li>
@@ -192,7 +192,7 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1713581531020"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1713582150006"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
@@ -212,7 +212,7 @@
 <p>2、Human Annotation Design：三个阶段：Prompt Annotation 对prompt进行分类和识别是否有问题。Text-Image Rating 从文本对齐，保真度和是否有害三个方面对图像进行打分。 Image Ranking 按偏好顺序给图像排序<br>。他们给数据打标的页面：</p>
 <p><img src="https://files.mdnice.com/user/49828/1b6b4337-0141-4d23-b827-f718ef502253.png"></p>
 <p>3、Human Annotation Analysis：经过2个月的注释，收集了8,878个提示的有效注释，产生了136,892对比较</p>
-<h2 id="RW-Training-人类偏好预测模型训练"><a href="#RW-Training-人类偏好预测模型训练" class="headerlink" title="RW Training 人类偏好预测模型训练"></a>RW Training 人类偏好预测模型训练</h2><p>有$k \in [4,9]$张图片对相同的提示$T$进行排序，从最好到最差标记为$x_1,x_2,…,x_k$，如果两个图像之间没有联系，则最多可以产生$C_k^2$个比较对。</p>
+<h2 id="RW-Training-人类偏好预测模型训练"><a href="#RW-Training-人类偏好预测模型训练" class="headerlink" title="RW Training 人类偏好预测模型训练"></a>RW Training 人类偏好预测模型训练</h2><p>有 $k \in [4,9]$ 张图片对相同的提示$T$进行排序，从最好到最差标记为 $x_1,x_2,…,x_k$ ，如果两个图像之间没有联系，则最多可以产生$C_k^2$个比较对。</p>
 <p>对于每一个比较对，如果$x_i$是较好的，$x_j$是较差的，那损失函数可以表示为：</p>
 <p>$loss(\theta)&#x3D;-\mathbb{E}<em>{(T,x_i,x_j) \sim \mathcal{D}}[log(\sigma (f</em>{\theta}(T,x_i)-f_{\theta}(T,x_j)))]$</p>
 <p>其中$f_{\theta}(T,x)$就是人类偏好打分模型</p>
@@ -242,7 +242,6 @@
 <h1 id="4、实验结果"><a href="#4、实验结果" class="headerlink" title="4、实验结果"></a>4、实验结果</h1><p><img src="https://files.mdnice.com/user/49828/be5839a9-77de-41c3-93dc-5bd878f95cbd.png"><br>实验基于Stable Diffusion v1.4，奖励模型统一采用ImageReward，使用PNDM作为noise scheduler，classifier free guidance采用默认值7.5。相比于微调之前的Stable Diffusion v1.4，ReFL微调模型最受青睐而且胜率最高。当和其他方法相互比较时，ReFL的结果总是更受偏好</p>
 <p><img src="https://files.mdnice.com/user/49828/9e109e5c-84e6-42ed-ae61-831ca3ef8ff4.png"></p>
 <h1 id="5、总结"><a href="#5、总结" class="headerlink" title="5、总结"></a>5、总结</h1><p>  在这项工作中，作者提出了ImageReward和ReFL，这是第一个通用的文本到图像的人类偏好奖励模型，以及通过ImageReward反馈优化扩散模型的直接微调方法。通过文章提出的系统的人类偏好标注管道，收集了一个137k的专门比较数据集来训练ImageReward，并在此基础上构建ReFL算法</p>
-<p><span style="display:block;text-align:right;">审核|xx</span><br><span style="display:block;text-align:right;">编辑|xx</span></p>
 </div>
         </div>
         
@@ -332,7 +331,7 @@
                     
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-04-20T02:52:11.020Z" itemprop="dateModified">最后编辑：2024-04-20</time>
+                    <time datetime="2024-04-20T03:02:30.006Z" itemprop="dateModified">最后编辑：2024-04-20</time>
                 </div>
             </div>
         </footer>
